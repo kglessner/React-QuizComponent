@@ -12,7 +12,7 @@ class QuizQuestion extends Component {
   render() {
 
     const answers = this.props.quiz_question.answer_options.map((value, index) => 
-      <QuizQuestionButton onClick={(button_text) => this.handleClick(button_text)} key={index} button_text={value}/>
+      <QuizQuestionButton clickHandler={(button_text) => this.handleClick(button_text)} key={index} button_text={value}/>
     );
 
     return (
